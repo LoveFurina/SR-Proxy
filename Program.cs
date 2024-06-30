@@ -16,6 +16,7 @@ namespace SR.Tool.Proxy
 
             s_proxyService = new ProxyService("127.0.0.1", 21000);
             AppDomain.CurrentDomain.ProcessExit += s_processExitHandler;
+            Console.WriteLine("启动完成");
 
             Thread.Sleep(-1);
         }
